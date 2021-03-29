@@ -1,0 +1,77 @@
+<head>
+
+    <meta charset="utf-8"/>
+    <title>calculadora
+    </title>
+
+</head>
+
+<body>
+    
+    <input type="number" id="numero1">
+    
+    <input type="number" id="numero2">
+    <h1 id="etiqueta1"></h1>
+
+    <button onclick="mostrarResultadoSuma()">sumar</button>
+    <button onclick="mostrarResultadoResta()">restar</button>
+    <button onclick="mostrarResultadoMultiplicacion()">multiplicar</button>
+    <button onclick="mostrarResultadoDivision()">divir</button>
+
+    
+
+    <script>
+    function mostrarResultadoSuma(){
+
+        var primer_numero_ingresado = document.getElementById("numero1").value;
+        var segundo_numero_ingresado = document.getElementById("numero2").value;
+
+        var primer_numero = primer_numero_ingresado;
+        var segundo_numero = segundo_numero_ingresado;
+        var resultado_suma = parseInt(primer_numero_ingresado) + parseInt( segundo_numero_ingresado); 
+
+        document.getElementById("etiqueta1").innerHTML = resultado_suma;
+
+    }
+
+    function mostrarResultadoResta(){
+
+        var primer_numero_ingresado = document.getElementById("numero1").value;
+        var segundo_numero_ingresado = document.getElementById("numero2").value;
+
+        var primer_numero = primer_numero_ingresado;
+        var segundo_numero = segundo_numero_ingresado;
+        var resultado_resta = primer_numero_ingresado - segundo_numero_ingresado;
+
+        document.getElementById("etiqueta1").innerHTML = resultado_resta;
+
+    }
+
+    function mostrarResultadoMultiplicacion(){
+
+        var primer_numero_ingresado = document.getElementById("numero1").value;
+        var segundo_numero_ingresado = document.getElementById("numero2").value;
+
+        var primer_numero = primer_numero_ingresado;
+        var segundo_numero = segundo_numero_ingresado;
+        var resultado_multiplicacion = primer_numero_ingresado * segundo_numero_ingresado;
+
+        document.getElementById("etiqueta1").innerHTML = resultado_multiplicacion;
+
+    }
+
+    function mostrarResultadoDivision(){
+
+        var primer_numero_ingresado = document.getElementById("numero1").value;
+        var segundo_numero_ingresado = document.getElementById("numero2").value;
+
+        var primer_numero = primer_numero_ingresado;
+        var segundo_numero = segundo_numero_ingresado;
+        var resultado_division = primer_numero_ingresado / segundo_numero_ingresado;
+
+        document.getElementById("etiqueta1").innerHTML = resultado_division;
+
+    }
+
+    </script>
+</body>

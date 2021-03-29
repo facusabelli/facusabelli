@@ -1,0 +1,55 @@
+<head>
+
+    <meta charset="utf-8"/>
+    <title>javascript
+    </title>
+
+</head>
+
+<body>
+<p>ingrese su nombre</p>
+<input type="text" id="nombre">
+
+<p>ingrese su apellido</p>
+<input type="text" id="apellido">
+
+
+<p>ingrese su edad</p>
+<input type="number" id="edad">
+
+<button onclick="mostrardatos()">mostrar datos ingresados</button> 
+<h1 id="respuesta1"></h1>
+<h1 id="respuesta2"></h1>
+<h1 id="respuesta3"></h1>
+
+<script>
+    function mostrardatos(){
+
+        var nombreingresado = document.getElementById("nombre").value;
+        var apellidoingresado = document.getElementById("apellido").value;
+        var edad = document.getElementById("edad").value;
+
+        var mensaje1 = "mi nombre es:" + nombreingresado;
+        var mensaje2 = "mi apellido es:" + apellidoingresado;
+        var mensaje3 = "mi edad es:" + edad;
+           
+        document.getElementById("respuesta1").innerHTML = mensaje1;
+        document.getElementById("respuesta1").style.color = "red";
+
+        document.getElementById("respuesta2").innerHTML = mensaje2;
+        document.getElementById("respuesta2").style.color = "blue";
+
+        document.getElementById("respuesta3").innerHTML = mensaje3;
+        document.getElementById("respuesta3").style.color = "yellow";
+
+        if(edad>18){
+        document.body.style.backgroundColor = "blue";
+        }
+        else
+        document.body.style.backgroundColor = "green";
+
+    }
+
+
+</script>
+</body>
