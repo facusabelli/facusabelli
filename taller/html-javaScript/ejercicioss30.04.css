@@ -1,0 +1,14 @@
+#imagen {
+	width: 1cm;
+	height: 1cm;
+	margin-left: 1cm;
+}
+
+body {
+	background-color: linen;
+}
+
+#botones {
+	margin-top: 60%;
+}
+
