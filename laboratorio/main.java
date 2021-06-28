@@ -1,34 +1,21 @@
-package  com.company ;
+public class main {
+    public static void main(String[] args){
+        banco a = new banco("Santander");
 
-public  class  Main {
+        cliente b = new cliente("Facundo",12345,1234);
+        cliente c = new cliente("Tobias",123456,123);
+        cliente d = new cliente("Sabelli",1234567,12);
 
-public  static  void  main ( String [] args ) {
-        Persona p1 =  nueva  Persona ();
-        Persona p2 =  nueva  Persona ( " jose " );
-        Persona p3 =  nueva  Persona ( " pablo " , 2 , 2345678 , 23456789 , " Triunvirato 2345 " );
-        
-        int e1= p1.getEdad();
-        System.out.println(e1);
-        p1.setEdad(e1*2);
-        e1= p1.getEdad();
-        System.out.println(e1);
+        a.agregarClientesVisitantes(b);
+        a.agregarClientesVisitantes(c);
+        a.agregarClientesVisitantes(d);
 
-        int t2= p2.getTelefono();
-        System.out.println(t2);
-        p2.setTelefono(12348765);
-        t2= p2.getTelefono();
-        System.out.println(t2);
+        a.cbusDeClientesVisitantes();
 
-        String n3 = p3.getNombre();
-        int e3 = p3.getEdad();
-        int d3 = p3.getDni();
-        int t3 = p3.getTelefono();
-        String dir3 = p3.getDireccion();
-        System.out.println(n3)
-        System.out.println(e3)
-        System.out.println(d3)
-        System.out.println(t3)
-        System.out.println(dir3)
+        a.imprimirHashSet(a.cbusDeClientesVisitantes());
 
+        a.cantidadDeVisitasPorCliente(1,b);
 
-
+        a.imprimirHashMap(a.cantidadDeVisitasPorCliente(4,b))
+    }
+}
