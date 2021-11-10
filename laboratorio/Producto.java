@@ -1,0 +1,6 @@
+
+public interface Producto {
+    public float calcularPrecioFinal();
+    public float calcularGananciaObtenida();
+    public String tipoDeProducto();
+}
