@@ -1,16 +1,23 @@
+import java.util.Scanner;
+
 public class ProductoDeRefrigeracion extends  ProductoElectrico{
 
-    private float litrosDeCapacidad;
+  private float litrosDeCapacidad;
 
-    public ProductoDeRefrigeracion(String nombre, String origen, int codigo, float costo, int cantDiasDeGarantia, float litrosDeCapacidad) {
-        super(nombre, origen, codigo, costo, cantDiasDeGarantia );
-        this.litrosDeCapacidad=litrosDeCapacidad;
-    }
-    public float getLitrosDeCapacidad() {
-        return litrosDeCapacidad;
-    }
+  public ProductoDeRefrigeracion(String nombre, String origen, int codigo, float costo, int cantDiasDeGarantia, float litrosDeCapacidad) {
+      super(nombre, origen, codigo, costo, cantDiasDeGarantia );
+      this.litrosDeCapacidad=litrosDeCapacidad;
+  }
+  public float getLitrosDeCapacidad() {
+      return litrosDeCapacidad;
+  }
 
-    public void setLitrosDeCapacidad(float litrosDeCapacidad) {
-        this.litrosDeCapacidad = litrosDeCapacidad;
-    }
+  public void setLitrosDeCapacidad(float litrosDeCapacidad) {
+      this.litrosDeCapacidad = litrosDeCapacidad;
+  }
+
+  @Override
+  public String tipoDeProducto(string productoDeRefrigeracion){
+    System.out.println("Esto es un "+ productoDeRefrigeracion);
+  }
 }

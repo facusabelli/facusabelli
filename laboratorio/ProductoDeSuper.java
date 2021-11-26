@@ -1,56 +1,50 @@
 public abstract class ProductoDeSuper implements Producto {
 
-    private String nombre;
-    private String origen;
-    private int codigo;
-    private float costo;
-    private float precioFinal;
+  private String nombre;
+  private String origen;
+  private int codigo;
+  private float costo;
 
-    public ProductoDeSuper(String nombre, String origen, int codigo, float costo, precioFinal) {
-        this.nombre=nombre;
-        this.origen=origen;
-        this.codigo=codigo;
-        this.costo=costo;
-        this.precioFinal=precioFinal;
-    }
 
-    public String getNombre() {
-        return nombre;
-    }
+  public ProductoDeSuper(String nombre, String origen, int codigo, float costo) {
+      this.nombre=nombre;
+      this.origen=origen;
+      this.codigo=codigo;
+      this.costo=costo;
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+  }
 
-    public String getOrigen() {
-        return origen;
-    }
+  public String getNombre() {
+      return nombre;
+  }
 
-    public void setOrigen(String origen) {
-        this.origen = origen;
-    }
+  public void setNombre(String nombre) {
+      this.nombre = nombre;
+  }
 
-    public int getCodigo() {
-        return codigo;
-    }
+  public String getOrigen() {
+      return origen;
+  }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
+  public void setOrigen(String origen) {
+      this.origen = origen;
+  }
 
-    public float getCosto() {
-        return costo;
-    }
+  public int getCodigo() {
+      return codigo;
+  }
 
-    public void setCosto(float costo) {
-        this.costo = costo;
-    }
+  public void setCodigo(int codigo) {
+      this.codigo = codigo;
+  }
 
-    public float getPrecioFinal() {
-        return precioFinal;
-    }
+  public float getCosto() {
+      return costo;
+  }
 
-    public void setPrecioFinal(float precioFinal) {
-        this.precioFinal = precioFinal;
-    }
+  public void setCosto(float costo) {
+      this.costo = costo;
+  }
+
+
 }
