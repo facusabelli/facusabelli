@@ -1,0 +1,5 @@
+- En los gráficos podemos apreciar los diferentes tipos de transporte que utilizo la gente durante la pandemia
+
+- Faltaría poder calcular estadísticas con el precio de cada uno de los trasportes
+
+- Podríamos suponer, mirando los gráficos que las personas eligen el colectivo por la frecuencia y el costo del mismo
