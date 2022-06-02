@@ -1,0 +1,14 @@
+¿Cuantos puestos dentro de la empresa pasan las 100 personas?
+Solo una, CEATSA
+
+¿Cual es el puesto con mas personas?
+CEATSA
+
+¿Cual es el puesto con menos personas?
+Gerencia General
+
+¿Algun puesto en la empresa pasa las 200 personas?
+No, la que mas personas tiene, posee 200 personas
+
+¿Cuales son los diferentes puestos que tiene la empresa?
+Viendo el grafico podemos ver los diferentes puestos que tiene la empresa
